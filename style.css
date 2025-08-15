@@ -25,7 +25,7 @@ body {
     color: var(--accent-01);
 }
 
-.body.light {
+body.light {
     --primary-color: #4FC6CE;
     --accent-01: #1D3A41;
     --accent-02: #225B60;
@@ -352,6 +352,45 @@ section {
     font-weight: 400;
 }
 
+.contributions {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: var(--accent-04) 3px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contribution activity-graph {
+    padding: 10px 20px;
+    color: var(--accent-02);
+    --activity-graph-text-color: var(--accent-04);
+    --activity-graph-rounded: 2px;
+    --activity-graph-level-0-bg: var(--accent-04);
+    --activity-graph-level-1-bg: #0E4545;
+    --activity-graph-level-2-bg: #006C69;
+    --activity-graph-level-3-bg: #25A0A7;
+    --activity-graph-level-4-bg: #37C9D5;
+}
+
+body.light .contribution activity-graph {
+    --activity-graph-level-0-bg: #EBEDF0;
+    --activity-graph-level-1-bg: #9BE9A8;
+    --activity-graph-level-2-bg: #40C463;
+    --activity-graph-level-3-bg: #30A14E;
+    --activity-graph-level-4-bg: #216E39;
+}
+
+.contribution > div {
+    overflow: auto;
+}
+
+.contribution figure {
+    overflow: hidden;
+}
+
+.contribution table {
+    border-spacing: 2px;
+}
 
 
 
