@@ -20,6 +20,13 @@ function theme() {
         darkBtn.style.display = "none";
         lightBtn.style.display = "block";
     }
-console.log("theme function is running")
-
 }
+
+const menuItems = document.querySelectorAll(".nav .item");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => { 
+        menuItems.forEach(item => item.classList.remove("active"));
+        item.classList.add("active")
+     })
+})
